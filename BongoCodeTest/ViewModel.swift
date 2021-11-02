@@ -81,7 +81,7 @@ struct ViewModel {
         combinedTxt += "\n\n"
         combinedTxt += "Frequency of Word:\n\n"
         combinedTxt += getWordsCount(text: txt)
-        print(combinedTxt)
+        print(combinedTxt) //as asked on the codeTest questions. 
         return combinedTxt
     }
     
