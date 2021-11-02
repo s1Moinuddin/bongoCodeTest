@@ -15,10 +15,10 @@ struct ViewModel {
         var stringArr = [String]()
         
         for i in 1...txt.count where i%n == 0 {
-            stringArr.append("\(txt[i-1]) ")
+            stringArr.append("\(txt[i-1]) ") //as array start with 0th index
         }
         var joinedStr = stringArr.joined()
-        joinedStr.removeLast()
+        joinedStr.removeLast() //remove the last spaces added in above logic. 
         return joinedStr
     }
     
@@ -33,11 +33,13 @@ struct ViewModel {
         return stringArr.joined()
     }
     
+    ///count of every word that occurred on the Text
     func getFreqMap(_ text:String) -> [String: Int] {
         let words = scrutinizedWords(text)
         return countFreq(words)
     }
     
+    ///clerars the data to get proper word.
     private func scrutinizedWords(_ txt:String) -> [String] {
         let words = txt.components(separatedBy: " ")
         var onlyWords = [String]()
@@ -54,6 +56,7 @@ struct ViewModel {
         return onlyWords
     }
     
+    ///find the multiple occurance frequency of a element in the array
     private func countFreq(_ arr: [String]) -> [String: Int] {
         var map = [String: Int]()
         let length = arr.count
@@ -70,6 +73,7 @@ struct ViewModel {
         return map
     }
     
+    ///combine 3 results to show together
     private func prepareDisplayText(_ txt:String) -> String {
         var combinedTxt = "Last Character: \(txt.last!)\n\n"
         combinedTxt += "Every 10th Character:\n\n"
@@ -104,6 +108,7 @@ extension ViewModel {
             }
     }
     
+    ///get all the text form html page
     private func parseHTML(_ html:String) -> String {
         do {
             let doc: Document = try SwiftSoup.parse(html)
@@ -123,5 +128,3 @@ extension ViewModel {
     }
 }
 
-
-//hello
