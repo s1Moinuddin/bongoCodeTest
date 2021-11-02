@@ -2,27 +2,23 @@ PODS:
   - Alamofire (5.4.4)
   - SVProgressHUD (2.2.5)
   - SwiftSoup (2.3.3)
-  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1)
   - SVProgressHUD
   - SwiftSoup
-  - SwiftyJSON (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SVProgressHUD
     - SwiftSoup
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftSoup: 8e4844e785a975744f2c2606f8b3844ef67eb259
-  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: be0ac636a7f522be2b640b86d7dacc07dda5c1ab
+PODFILE CHECKSUM: bf28234caa71ad771d2dfb85780732049606b166
 
 COCOAPODS: 1.10.1
