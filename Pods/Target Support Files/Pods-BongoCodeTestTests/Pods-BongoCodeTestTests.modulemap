@@ -1,0 +1,6 @@
+framework module Pods_BongoCodeTestTests {
+  umbrella header "Pods-BongoCodeTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
